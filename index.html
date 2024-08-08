@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">product</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <img src="img1.webp" alt="Hero Image" id="mainimage">
+            <div class="text">
+                <h1>FRESH COFFEE IN THE MORNING</h1>
+                <p>Behind every successful person is a substantial amount of coffee.</p>
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="container">
+           
+            <p>“Coffee has a lot of potential to effect positive change in the world.” 
+            coffee is more than just a drink; it’s a passion. We are dedicated to sourcing the finest beans from around the world and roasting them to perfection. Our commitment to quality and sustainability ensures that every cup of coffee not only tastes amazing but also supports ethical and eco-friendly practices.From single-origin beans to our expertly crafted blends, we aim to provide an exceptional coffee experience for every palate. Whether you’re a casual drinker or a coffee connoisseur, our selection offers something for everyone to enjoy.</p>
+            <img src="aboutimage.jpg" alt="About Us Image" class="section-image">
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="container">
+            
+            <div class="product">
+                <img src="product1.jpeg" alt="product 1" class="prod1_img">
+                <h3>Cappuccino</h3>
+                <p>Cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk including a layer of milk foam.</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpeg" alt="product 2" class="prod2_img">
+                <h3>Caffè macchiato</h3>
+                <p>Macchiato. A macchiato is a shot of espresso with just a touch of steamed milk or foam. </p>
+            </div>
+            <div class="product">
+                <img src="product3.jpeg" alt="product 3" class="prod3_img">
+                <h3>Americano</h3>
+                <p>Americano is made by diluting a shot of espresso with hot water, resulting in a milder and more approachable coffee beverage. </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+        <div class="container5">
+            <h2>Contact Us</h2>
+            <form  onsubmit="validateForm(event)" action="#"  method="GET" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+               
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Message"></textarea>
+               
+                <button type="submit" class="btn-primary" name="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
